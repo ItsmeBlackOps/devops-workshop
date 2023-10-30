@@ -23,7 +23,7 @@
       state: present
   
   - name: start jenkins service
-    apt:
+    service:
       name: jenkins
       state: started
   
@@ -31,4 +31,3 @@
     service:
       name: jenkins
       enabled: yes
-      
